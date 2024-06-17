@@ -1,5 +1,6 @@
 import api from './api'
 
+
 const loginUserApi = (userValues) => 
     api.post('/auth/login', userValues)
     .then((response) => response)
@@ -10,4 +11,9 @@ const registroUser = (addUserValues) =>
     .then((response) => response)
     .catch((err) => console.error('Erro na chamada', err));
 
-export { loginUserApi, registroUser }
+const getUserById = (idUser) => 
+    api.get(`/usuario/findById/${idUser}`)
+    .then(response => response)
+    .catch((err) => err);
+
+export { loginUserApi, registroUser, getUserById }

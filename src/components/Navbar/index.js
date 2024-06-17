@@ -25,7 +25,7 @@ const Navbar = () => {
                   <BsFillCartFill className='w-5 h-5 cursor-pointer text-orange-500'/>
                 </div>
                 <img src='' alt=''/>
-                <p className=' text-orange-500'>Bem Vindo,Nome usuário</p>
+                <p className=' text-orange-500'>Bem Vindo, Nome</p>
                 <MdLogout className='w-6 h-6 cursor-pointer  text-orange-500'onClick={logoutUser}/>
               </div>
 
