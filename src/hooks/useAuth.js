@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { loginUserApi } from "../services/authService";
 
 const useAuth = () => {
 
@@ -18,14 +19,8 @@ const useAuth = () => {
     
 
     const loginUser = async (inputValues) =>{
-        const response = await fetch('http://localhost:3000/auth/login', {
-            method: 'POST', 
-            headers: {
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(inputValues)
-          })
-          const data = await response.json();
+        const response = await loginUserApi(inputValues)
+          const data = await response.data;
           console.log(data);
           localStorage.setItem('userInfo', JSON.stringify(data))
         navigate('/')
