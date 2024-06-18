@@ -7,6 +7,8 @@ import { AuthProvider } from './context/AuthContext';
 import Contato from './pages/Contato';
 import Registro from './pages/Registro';
 import ProtectedRoute from './Routes/ProtectedRoute';
+import Admin from './pages/Admin';
+import AddProduct from './pages/AddProducts';
 
 
 function App() {
@@ -23,7 +25,18 @@ function App() {
         <Route path='/login' element={<Login/>}/>
         <Route path='/contato' element={<Contato/>}/>
         <Route path='/registro' element={<Registro/>}/>
-      </Routes>
+        <Route path='/admin' element={
+            <ProtectedRoute>
+              <Admin/>
+            </ProtectedRoute>
+        }/>
+        <Route path='/add-product' element={
+            <ProtectedRoute>
+              <AddProduct/>
+            </ProtectedRoute>
+        }/>
+        </Routes>
+        
     </AuthProvider>
 
     </>

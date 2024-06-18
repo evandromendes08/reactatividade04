@@ -26,6 +26,7 @@ const Navbar = () => {
                 </div>
                 <img src='' alt=''/>
                 <p className=' text-orange-500'>Bem Vindo, {userFull.nome} !</p>
+                <Link to='/admin'>Admin</Link>
                 <img src={userFull.imagem} className="w-10 h-10 rounded-full" alt="" />
                 <MdLogout className='w-6 h-6 cursor-pointer  text-orange-500'onClick={logoutUser}/>
               </div>
