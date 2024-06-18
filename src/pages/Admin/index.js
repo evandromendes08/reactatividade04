@@ -28,7 +28,7 @@ const Admin = () => {
   return (
     <section className="my-12 max-w-screen-xl mx-auto px-6">
       <div className="flex justify-end space-y-2">
-        ----<button onClick={() => navigate('/admin/add-product')} className="w-44 px-2  py-3 bg-primary text-white ring-red-400 focus:outline-none focus:ring-4 rounded-lg transition duration-300 poppins ">
+        <button onClick={() => navigate('/admin/add-product')} className="w-44 px-2  py-3 bg-primary text-white ring-red-400 focus:outline-none focus:ring-4 rounded-lg transition duration-300 poppins ">
           Adicionar Produto
         </button>
       </div>

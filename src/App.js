@@ -9,6 +9,7 @@ import Registro from './pages/Registro';
 import ProtectedRoute from './Routes/ProtectedRoute';
 import Admin from './pages/Admin';
 import AddProduct from './pages/AddProducts';
+import EditProduct from './pages/EditProduct';
 
 
 function App() {
@@ -30,13 +31,18 @@ function App() {
               <Admin/>
             </ProtectedRoute>
         }/>
-        <Route path='/add-product' element={
+        <Route path='/admin/add-product' element={
             <ProtectedRoute>
               <AddProduct/>
             </ProtectedRoute>
         }/>
+        <Route path='/admin/edit-product:id' element={
+            <ProtectedRoute>
+              <EditProduct/>
+            </ProtectedRoute>
+        }/>
         </Routes>
-        
+              
     </AuthProvider>
 
     </>
