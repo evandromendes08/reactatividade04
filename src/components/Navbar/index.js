@@ -10,7 +10,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   return (
-    <header className='bg-transparent z-50 w-full'>
+    <header className='bg-white z-50 top-0 w-full'>
         <nav className='flex items-center max-w-screen-xl mx-auto px-6 py-3'>
             <div className='flex flex-grow items-center'>
                 <Link to='/'>
