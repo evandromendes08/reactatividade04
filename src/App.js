@@ -10,6 +10,7 @@ import ProtectedRoute from './Routes/ProtectedRoute';
 import Admin from './pages/Admin';
 import AddProduct from './pages/AddProducts';
 import EditProduct from './pages/EditProduct';
+import ProductInfo from './components/Product';
 
 
 function App() {
@@ -23,6 +24,11 @@ function App() {
             <Home/>
           </ProtectedRoute>
           }/>
+        <Route path='/product/:id' element={
+          <ProtectedRoute>
+            <ProductInfo/>
+          </ProtectedRoute>
+        }/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/contato' element={<Contato/>}/>
         <Route path='/registro' element={<Registro/>}/>

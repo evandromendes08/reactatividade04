@@ -18,7 +18,7 @@ const Admin = () => {
   }
 
   const removeProduct = async (id) => {
-    const answer = window.confirm('Deseja excluir o produto ?')
+    const answer = window.confirm('Deseja excluir o produto?')
     if(answer) {
       await deleteProduct(id);
       getAllProducts();
