@@ -43,8 +43,8 @@ const ProductInfo = () => {
 
 
   return (
-    <main className="max-w-screen-xl mx-auto px-6 my-16">
-      <div className="flex flex-col justify-center items-center h-screen">
+    <main className="max-w-screen-xl mx-auto px-6 my-3">
+      <div className="flex flex-col justify-start items-center h-screen">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
           <div className="order-2 md:order-1 lg:order-1 flex flex-col justify-center">
             <h1 className="text-center md:text-left lg:text-left text-3xl lg:text-4xl font-semibold poppins pb-4 text-gray-700 select-none">
@@ -74,7 +74,7 @@ const ProductInfo = () => {
             <div className="mt-8 flex items-center justify-center md:justify-start lg:justify-start">
               <button onClick={addToCart} className="flex items-center space-x-3 bg-primary px-6 py-3 text-white poppins rounded-full ring-red-300 focus:outline-none focus:ring-4 transform transition duration-700 hover:scale-105">
                 <FiShoppingCart className="text-xl"/>
-                <span>Add</span>
+                <span>Carrinho</span>
               </button>
             </div>
           </div>

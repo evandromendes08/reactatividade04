@@ -11,6 +11,7 @@ import Admin from './pages/Admin';
 import AddProduct from './pages/AddProducts';
 import EditProduct from './pages/EditProduct';
 import ProductInfo from './components/Product';
+import ProductInfo from './pages/ProductInfo';
 
 
 function App() {
