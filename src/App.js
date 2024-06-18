@@ -13,6 +13,7 @@ import EditProduct from './pages/EditProduct';
 import ProductInfo from './components/Product';
 import ProductInfo from './pages/ProductInfo';
 import Cart from './pages/Cart';
+import Complete from './pages/Complete';
 
 
 function App() {
@@ -34,6 +35,11 @@ function App() {
         <Route path='/cart' element={
           <ProtectedRoute>
             <Cart/>
+          </ProtectedRoute>
+        }/>
+        <Route path='/complete' element={
+          <ProtectedRoute>
+            <Complete/>
           </ProtectedRoute>
         }/>
         <Route path='/login' element={<Login/>}/>
