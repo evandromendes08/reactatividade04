@@ -55,7 +55,6 @@ const AddProduct = () => {
     }
 
     const response = await addProductAPI(product);
-
     console.log(response);
     if(response.data) {
       alert(`Produto ${response.data.nome} cadastrado com sucesso !`)
@@ -69,7 +68,7 @@ const AddProduct = () => {
       <div className="flex flex-col space-y-2">
         <h1 className="text-2xl text-gray-600">Cadastrar Produtos</h1>
       </div>
-      ----<form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 mt-6">
+      <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 mt-6">
         <div className="flex flex-col space-y-4">
           <label htmlFor="nome" className="text-gray-500">
             Nome do Produto

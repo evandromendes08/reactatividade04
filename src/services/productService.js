@@ -1,4 +1,4 @@
-import api from './api'
+import api from './api';
 
 const addProductAPI = (product) =>
   api.post('/produto/create', product)
