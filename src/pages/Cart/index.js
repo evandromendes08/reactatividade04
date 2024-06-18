@@ -127,7 +127,7 @@ const Cart = () => {
                     </div>
                     <div className="flex items-center px-4 py-2 space-x-3">
                       <span className='text-lg text-gray-500 select-none'>
-                        {product.quantity}un
+                        {product.quantity}und
                       </span>
                     </div>
                     <div className='flex flex-col items-center justify-center'>

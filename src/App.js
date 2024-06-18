@@ -12,6 +12,7 @@ import AddProduct from './pages/AddProducts';
 import EditProduct from './pages/EditProduct';
 import ProductInfo from './components/Product';
 import ProductInfo from './pages/ProductInfo';
+import Cart from './pages/Cart';
 
 
 function App() {
@@ -28,6 +29,11 @@ function App() {
         <Route path='/product/:id' element={
           <ProtectedRoute>
             <ProductInfo/>
+          </ProtectedRoute>
+        }/>
+        <Route path='/cart' element={
+          <ProtectedRoute>
+            <Cart/>
           </ProtectedRoute>
         }/>
         <Route path='/login' element={<Login/>}/>
