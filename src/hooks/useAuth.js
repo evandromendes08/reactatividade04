@@ -5,7 +5,7 @@ import api from '../services/api';
 
 const useAuth = () => {
 
-    const [userLogged, setUserLogged] = useState(true);
+    const [userLogged, setUserLogged] = useState(false);
     const [loading, setLoading] = useState(true);
     const [userFull, setUserFull] = useState({});
     const navigate = useNavigate();
@@ -19,7 +19,7 @@ const useAuth = () => {
         setUserLogged(true);
       }
       setLoading(false);
-    }, [])
+    }, []);
     
 
     const loginUser = async (inputValues) =>{
@@ -38,7 +38,7 @@ const useAuth = () => {
 
     const findUserById = async (idUser) => {
       const response = await getUserById(idUser);
-      setUserFull(response.data);
+      setUserFull(response.data)
       console.log(userFull); 
     }
     
